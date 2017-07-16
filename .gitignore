@@ -12,6 +12,9 @@ nbproject
 # windows thumbnail cache
 Thumbs.db
 
+#
+app/protected/runtime/*
+
 # composer vendor dir
 !/vendor
 
