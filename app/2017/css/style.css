@@ -1,0 +1,31 @@
+*{ box-sizing: border-box; padding: 0; margin:0; }
+ul,li{list-style: none;}
+html{ width: 100%; height: 100%; }
+body{ background: url(../images/bg.jpg) top center no-repeat; background-size: 100% 100%; width: 100%; height: 100%; position: relative; font-family: 'Microsoft Yahei','微软雅黑', 微软雅黑,'宋体',宋体,arial,'Hiragino Sans GB',Tahoma,Arial,Helvetica; font-size: 14px; color: #333;}
+#showslist{ width:100%; height: 626px; position: absolute; left: 0px; top:141px; z-index: 3000;}
+#fireworks{width:100%; height: 100%; position: absolute; left: 0px; top:0px; z-index: 1000;}
+#subtitles{width:100%; height: 100%; position: relative; left: 0px; top:0px; z-index: 4000;}
+#list{ width:1049px; height: 626px; background: url(../images/quyu.png) center no-repeat; margin: 0 auto; position: relative; transform: scale(0.77,1); -webkit-transform: scale(0.77,1);}
+#start_btn,#danmu_btn{ width:40px; height: 40px; border-radius: 20px; background:rgba(255,127,2,0.5); position: fixed; z-index: 50000; bottom:10px; right: 10px; cursor: pointer; line-height: 40px; text-align: center; color: #fff; font-size: 12px; border:none;}
+#start_btn:hover,#danmu_btn:hover{ background:rgba(179,44,36,0.5);}
+/*.flying{font-weight:normal !important; font-family: 'Microsoft Yahei','微软雅黑', 微软雅黑,'宋体',宋体,arial,'Hiragino Sans GB',Tahoma,Arial,Helvetica !important;}*/
+#danmu_btn{ left: 10px; right: auto; }
+#list .list_content{ width:920px; margin:0 auto; }
+#list .list_content ul{float: left; width:50%; padding-top: 56px;}
+#list .list_content ul li{ display: table; width: 100%; padding:10px 40px 15px 10px;}
+#list .list_content ul li .order{ display: table-cell; vertical-align: top; width:30px; text-align: center; font-size: 14px; color: #b32b24;}
+#list .list_content ul li .info{ display: table-cell;  vertical-align: top; width:380px; }
+.name .aticle_name{ color: #b32b24;  font-size: 16px;margin-right:5px;}
+.name .aticle_depart{ color: #333; font-size: 16px;}
+.other{ width: 100%; position: relative; margin-top:6px;}
+.other .progress{ height: 15px; background: #fff; width: 100%; overflow: hidden;}
+.other .progress:after{content:'';  display: block; position: absolute; top: -10px; right:-13px; height:42px; width: 26px; background: url(../images/zan.png) no-repeat; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+.champion_1 .other .progress:after{content:'1';  display: block; position: absolute; top: -29px; right:-32px; height:58px; width: 58px; background: url(../images/champion3.png) no-repeat; text-align: center; font-size:30px; line-height:32px; font-weight: bold; color: #b32c24;}
+.champion_2 .other .progress:after{content:'2';  display: block; position: absolute; top: -29px; right:-32px; height:58px; width: 58px; background: url(../images/champion3.png) no-repeat; text-align: center; font-size:30px; line-height:32px; font-weight: bold; color: #b32c24;}
+.champion_3 .other .progress:after{content:'3';  display: block; position: absolute; top: -29px; right:-32px; height:58px; width: 58px; background: url(../images/champion3.png) no-repeat; text-align: center; font-size:30px; line-height:32px; font-weight: bold; color: #b32c24;}
+.other .progress .gressing{ height: 15px; width:0%; background: #ff7f02; transition: all 1.8s;-webkit-transition: all 1.8s;-moz-transition: all 1.8s;-o-transition: all 1.8s;}
+.list_content ul:nth-child(odd) li:nth-child(odd) .gressing{background: #ff7f02;}
+.list_content ul:nth-child(odd) li:nth-child(even) .gressing{background: #f7a53b;}
+.list_content ul:nth-child(even) li:nth-child(even) .gressing{background: #ff7f02;}
+.list_content ul:nth-child(even) li:nth-child(odd) .gressing{background: #f7a53b;}
+.other .nownumb{ position:absolute; right: 20px; top:-3px;}
